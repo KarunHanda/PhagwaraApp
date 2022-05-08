@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".CardViewContainer">
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/left_panel"
+    android:layout_width="@dimen/card_ic_container_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginTop="@dimen/card_ic_container_margin_top"
+    android:layout_marginStart="@dimen/card_ic_container_margin_left"
+    android:layout_marginBottom="@dimen/card_ic_container_margin_bottom"
+    app:cardCornerRadius="@dimen/card_ic_container_radius"
+    app:cardBackgroundColor="@color/cardview_back"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="fill"
+    android:layout_marginTop="@dimen/ll_in_card_margin_top"
+    android:layout_marginBottom="@dimen/ll_in_card_margin_bottom"
+    android:layout_marginLeft="@dimen/ll_in_card_margin_left"
+    >
+    <ImageView
+        android:id="@+id/rent"
+        android:layout_width="@dimen/im_view_in_ll_width"
+        android:layout_height="@dimen/im_view_in_ll_height"
+        android:src="@drawable/home_icon_dark"
+        android:layout_marginEnd="25dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rent"
+        android:textSize="@dimen/tv_in_ll_size"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/tv_in_ll_margin_bottom"
+        />
+    <ImageView
+        android:id="@+id/milk"
+        android:layout_width="@dimen/im_view_in_ll_width"
+        android:layout_height="@dimen/im_view_in_ll_height"
+        android:src="@drawable/milk_icon_dark"
+        android:layout_marginEnd="25dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/milk"
+        android:textSize="@dimen/tv_in_ll_size"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/tv_in_ll_margin_bottom"
+        />
+    <ImageView
+        android:id="@+id/items"
+        android:layout_width="@dimen/im_view_in_ll_width"
+        android:layout_height="@dimen/im_view_in_ll_height"
+        android:src="@drawable/items_icon_dark"
+        android:layout_marginEnd="25dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/items"
+        android:textSize="@dimen/tv_in_ll_size"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
+</androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/card_content_margin_left"
+    android:layout_marginEnd="@dimen/card_content_margin_right"
+    android:layout_marginTop="@dimen/card_content_margin_top"
+    android:layout_marginBottom="@dimen/card_content_margin_bottom"
+    app:cardCornerRadius="@dimen/card_content_radius"
+    >
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </androidx.fragment.app.FragmentContainerView>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>

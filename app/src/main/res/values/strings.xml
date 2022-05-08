@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="top_heading">Bills Summary</string>
+    <string name="house_rent">House Rent</string>
+    <string name="rent">Rent</string>
+    <string name="milk_use">Milk Use</string>
+    <string name="milk">Milk</string>
+    <string name="items_inventory">Items Inventory</string>
+    <string name="items">Items</string>
+    <string-array name="months">
+        <item>Jan(01)</item>
+        <item>Feb(02)</item>
+        <item>Mar(03)</item>
+        <item>Apr(04)</item>
+        <item>May(05)</item>
+        <item>Jun(06)</item>
+        <item>Jun(07)</item>
+        <item>Aug(08)</item>
+        <item>Sep(09)</item>
+        <item>Oct(10)</item>
+        <item>Nov(11)</item>
+        <item>Dec(12)</item>
+    </string-array>
+    <string-array name="years">
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+    </string-array>
+</resources>
